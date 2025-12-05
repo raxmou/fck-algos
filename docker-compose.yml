@@ -5,7 +5,7 @@ services:
     build:
       context: .
     expose:
-      - "3005"          # only inside Docker; no host port needed
+      - "3005"
     networks:
       - fck-algos-shared-net
 
