@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  fckalgos-frontend:
+    build:
+      context: .
+    expose:
+      - "3005"          # only inside Docker; no host port needed
+    networks:
+      - fck-algos-shared-net
+
+networks:
+  fck-algos-shared-net:
+    external: true
+
